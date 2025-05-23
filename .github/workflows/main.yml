@@ -1,0 +1,23 @@
+name: Build Super Trunfo C
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repositório
+      uses: actions/checkout@v3
+
+    - name: Instalar GCC
+      run: sudo apt update && sudo apt install -y gcc
+
+    - name: Compilar código
+      run: gcc super_trunfo.c -o super_trunfo
+
+    - name: Testar execução (simples)
+      run: ./super_trunfo < /dev/null || true
