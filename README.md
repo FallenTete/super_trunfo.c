@@ -10,7 +10,7 @@ Este é um jogo simples de **Super Trunfo** implementado em linguagem **C**. O j
 ### ✅ Pré-requisitos
 - Compilador C instalado:
   - **Windows**: [MinGW](https://sourceforge.net/projects/mingw)
-  - **Linux/macOS**: GCC (geralmente já instalado)
+  - **Linux/macOS**: GCC 
 
 ---
 
